@@ -10,8 +10,8 @@ const AuthProvider = ({ children }) => {
   })
 
   //axios config
-  axios.defaults.baseURL = process.env.REACT_APP_BACKEND
-  axios.defaults.headers.common["Authorization"] = auth.token
+  axios.defaults.baseURL = 'https://commerce.herokuapp.com/api'
+  axios.defaults.headers.common['Authorization'] = auth.token
 
   useEffect(() => {
     const data = localStorage.getItem('e-auth')
